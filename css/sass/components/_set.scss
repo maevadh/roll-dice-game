@@ -1,0 +1,45 @@
+.section-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.set-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.player-one-container {
+  background-color: $color-navy-blue;
+  border-radius: 7px 0 0 7px;
+  color: $color-white;
+  height: 500px;
+  text-align: center;
+  width: 45%;
+}
+
+.player-one {
+  display: block;
+  font-size: 20px;
+  margin: 30px 0 20px 0;
+}
+
+.player-global {
+  font-size: 60px;
+}
+
+.player-two-container {
+  background-color: $color-violet-blue;
+  border-radius: 0 7px 7px 0;
+  color: $color-white;
+  height: 500px;
+  text-align: center;
+  width: 45%;
+}
+
+.player-two {
+  display: block;
+  font-size: x-large;
+  margin: 30px 0 20px 0;
+}
+

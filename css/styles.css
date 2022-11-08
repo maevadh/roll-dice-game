@@ -1,1 +1,44 @@
-/*# sourceMappingURL=styles.css.map */
+.section-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.set-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.player-one-container {
+  background-color: #150578;
+  border-radius: 7px 0 0 7px;
+  color: #FFFFFF;
+  height: 500px;
+  text-align: center;
+  width: 45%;
+}
+
+.player-one {
+  display: block;
+  font-size: 20px;
+  margin: 30px 0 20px 0;
+}
+
+.player-global {
+  font-size: 60px;
+}
+
+.player-two-container {
+  background-color: #3943B7;
+  border-radius: 0 7px 7px 0;
+  color: #FFFFFF;
+  height: 500px;
+  text-align: center;
+  width: 45%;
+}
+
+.player-two {
+  display: block;
+  font-size: x-large;
+  margin: 30px 0 20px 0;
+}/*# sourceMappingURL=styles.css.map */
