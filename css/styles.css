@@ -23,8 +23,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 90px;
+  padding-top: 35px;
+  padding-bottom: 180px;
   flex: 1;
 }
 
@@ -34,7 +34,6 @@ body {
 
 .player-one {
   display: block;
-  font-size: 20px;
   margin: 30px 0 20px 0;
   font-size: 15px;
 }
@@ -51,6 +50,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  border-radius: 3px;
 }
 
 .player-two-container {
@@ -59,34 +59,33 @@ body {
 
 .player-two {
   display: block;
-  font-size: 20px;
   margin: 30px 0 20px 0;
   font-size: 15px;
 }
 
 .dice {
   position: absolute;
-  top: 36%;
-  width: 100px;
+  top: 33%;
+  width: 145px;
 }
 
 .roll {
   position: absolute;
-  bottom: 40%;
+  bottom: 46%;
   color: #FFF;
   font-size: 22px;
 }
 
 .save-score {
   position: absolute;
-  bottom: 8%;
+  bottom: 14%;
   color: #FFF;
   font-size: 22px;
 }
 
 .new-game {
   position: absolute;
-  bottom: 2%;
+  bottom: 4%;
   color: #FFF;
   font-size: 15px;
 }
@@ -102,12 +101,17 @@ body {
 .button-go-to-play {
   display: flex;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 @media (min-width: 800px) {
   .save-score {
-    bottom: 19%;
+    bottom: 170px;
+  }
+  .score-container {
+    height: 90px;
+    width: 110px;
+    font-weight: 700;
   }
   .new-game {
     bottom: 7%;
@@ -118,5 +122,26 @@ body {
   }
   .player-global-score {
     font-size: 75px;
+  }
+  .players-container {
+    padding-bottom: 140px;
+  }
+}
+@media (min-width: 1200px) {
+  .dice {
+    width: 210px;
+  }
+  .score-container {
+    height: 110px;
+    width: 150px;
+  }
+  .save-score {
+    font-size: 30px;
+  }
+  .player-one {
+    font-size: 22px;
+  }
+  .player-two {
+    font-size: 22px;
   }
 }/*# sourceMappingURL=styles.css.map */
