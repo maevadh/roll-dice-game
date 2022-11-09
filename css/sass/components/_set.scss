@@ -1,9 +1,11 @@
 body {
   font-family: "Lato", sans-serif;
+  margin: 0;
 }
 
 .section-container {
   height: 100vh;
+  margin: 10px;
 }
 
 .set-container {
@@ -11,12 +13,11 @@ body {
   justify-content: center;
   position: relative;
   border-radius: 7px;
-  overflow: hidden;
+  height: 100%;
 }
 
 .players-container {
   color: $color-white;
-  height: 500px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -47,6 +48,9 @@ body {
   color: $color-black;
   width: 100px;
   height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .player-two-container {
@@ -85,4 +89,37 @@ body {
   bottom: 2%;
   color: $color-white;
   font-size: $font-size-small;
+}
+
+.rules-game-container {
+  background-color: $color-navy-blue;
+  color: $color-white;
+  font-size: 20px;
+  text-align: justify;
+  padding: 40px 40px 17px 40px;
+}
+
+.button-go-to-play {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+@media (min-width: 800px) {
+  .save-score {
+    bottom: 19%;
+  }
+
+  .new-game {
+    bottom: 7%;
+  }
+
+  .dice {
+    width: 170px;
+    top: 27%;
+  }
+
+  .player-global-score {
+    font-size: 75px;
+  }
 }

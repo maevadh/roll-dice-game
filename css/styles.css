@@ -1,11 +1,11 @@
 body {
   font-family: "Lato", sans-serif;
+  margin: 0;
 }
 
 .section-container {
-  display: flex;
-  height: 96vh;
-  align-items: center;
+  height: 100vh;
+  margin: 10px;
 }
 
 .set-container {
@@ -13,19 +13,18 @@ body {
   justify-content: center;
   position: relative;
   border-radius: 7px;
-  width: 100%;
   height: 100%;
 }
 
 .players-container {
-  color: #fff;
-  height: 100%;
+  color: #FFF;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding-top: 10px;
+  padding-bottom: 90px;
   flex: 1;
 }
 
@@ -45,20 +44,17 @@ body {
 }
 
 .score-container {
-  background-color: #fff;
+  background-color: #FFF;
   color: #000;
   width: 100px;
   height: 70px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  font-weight: 700;
-  margin-bottom: 130px;
-  border-radius: 3px;
+  justify-content: space-around;
 }
 
 .player-two-container {
-  background-color: #3943b7;
+  background-color: #3943B7;
 }
 
 .player-two {
@@ -70,27 +66,57 @@ body {
 
 .dice {
   position: absolute;
-  top: 33%;
-    width: 130px;
+  top: 36%;
+  width: 100px;
 }
 
 .roll {
   position: absolute;
   bottom: 40%;
-  color: #fff;
+  color: #FFF;
   font-size: 22px;
 }
 
 .save-score {
   position: absolute;
-  bottom: 11%;
-  color: #fff;
+  bottom: 8%;
+  color: #FFF;
   font-size: 22px;
 }
 
 .new-game {
   position: absolute;
   bottom: 2%;
-  color: #fff;
+  color: #FFF;
   font-size: 15px;
-} /*# sourceMappingURL=styles.css.map */
+}
+
+.rules-game-container {
+  background-color: #150578;
+  color: #FFF;
+  font-size: 20px;
+  text-align: justify;
+  padding: 40px 40px 17px 40px;
+}
+
+.button-go-to-play {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+@media (min-width: 800px) {
+  .save-score {
+    bottom: 19%;
+  }
+  .new-game {
+    bottom: 7%;
+  }
+  .dice {
+    width: 170px;
+    top: 27%;
+  }
+  .player-global-score {
+    font-size: 75px;
+  }
+}/*# sourceMappingURL=styles.css.map */
