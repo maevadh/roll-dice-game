@@ -15,7 +15,7 @@ body {
 }
 
 .players-container {
-  color: #FFF;
+  color: #fff;
   height: 500px;
   text-align: center;
   display: flex;
@@ -43,14 +43,18 @@ body {
 }
 
 .score-container {
-  background-color: #FFF;
+  background-color: #fff;
   color: #000;
   width: 100px;
   height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-weight: 700;
 }
 
 .player-two-container {
-  background-color: #3943B7;
+  background-color: #3943b7;
 }
 
 .player-two {
@@ -69,20 +73,20 @@ body {
 .roll {
   position: absolute;
   bottom: 40%;
-  color: #FFF;
+  color: #fff;
   font-size: 22px;
 }
 
 .save-score {
   position: absolute;
   bottom: 8%;
-  color: #FFF;
+  color: #fff;
   font-size: 22px;
 }
 
 .new-game {
   position: absolute;
-  bottom: 2%;
-  color: #FFF;
+  bottom: 3%;
+  color: #fff;
   font-size: 15px;
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
