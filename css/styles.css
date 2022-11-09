@@ -53,7 +53,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   font-weight: 700;
-  margin-bottom: 112px;
+  margin-bottom: 130px;
   border-radius: 3px;
 }
 
@@ -70,8 +70,8 @@ body {
 
 .dice {
   position: absolute;
-  top: 36%;
-  width: 100px;
+  top: 33%;
+    width: 130px;
 }
 
 .roll {
@@ -83,14 +83,14 @@ body {
 
 .save-score {
   position: absolute;
-  bottom: 8%;
+  bottom: 11%;
   color: #fff;
   font-size: 22px;
 }
 
 .new-game {
   position: absolute;
-  bottom: 3%;
+  bottom: 5%;
   color: #fff;
   font-size: 15px;
 } /*# sourceMappingURL=styles.css.map */
