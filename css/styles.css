@@ -3,7 +3,9 @@ body {
 }
 
 .section-container {
-  height: 100vh;
+  display: flex;
+  height: 97vh;
+  align-items: center;
 }
 
 .set-container {
@@ -11,19 +13,19 @@ body {
   justify-content: center;
   position: relative;
   border-radius: 7px;
-  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 .players-container {
   color: #fff;
-  height: 500px;
+  height: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding-top: 10px;
-  padding-bottom: 90px;
   flex: 1;
 }
 
@@ -51,6 +53,8 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   font-weight: 700;
+  margin-bottom: 100px;
+  border-radius: 3px;
 }
 
 .player-two-container {
