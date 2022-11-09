@@ -7,22 +7,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--Link css-->
   <link rel="stylesheet" href="./css/styles.css">
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
   <title>Jeu du dé</title>
 </head>
 
 <body>
   <section class="section-container">
     <div class="set-container">
-      <div class="player-one-container">
-        <span class="player-one">Joueur 1</span>
-        <span class="player-global">50</span>
+      <div class="players-container player-one-container">
+        <div>
+          <span class="player-one">Joueur 1</span>
+          <span class="player-global-score">50</span>
+        </div>
+        <div class="score-container">
+          <div>Score</div>
+          <div>0</div>
+        </div>
       </div>
 
-      <div class="player-two-container">
-        <span class="player-two">Joueur 2</span>
-        <span class="player-global">75</span>
-      </div>
+      <img class="dice" src="img/dice-6.png" alt="dice">
 
+      <div class="players-container player-two-container">
+        <div>
+          <span class="player-two">Joueur 2</span>
+          <span class="player-global-score">75</span>
+        </div>
+        <div class="score-container">
+          <div>Score</div>
+          <div>0</div>
+        </div>
+      </div>
+      <span class="roll">
+        Lancer le dé
+      </span>
+
+      <span class="save-score">
+        Enregistrer le score
+      </span>
+
+      <span class="new-game">
+        Nouvelle partie
+      </span>
+
+
+    </div>
+  </section>
+
+  <section>
+    <div>
+      <span>Enregistrer le score</span>
+      <span>Nouvelle partie</span>
     </div>
   </section>
 
