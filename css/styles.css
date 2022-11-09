@@ -4,7 +4,7 @@ body {
 
 .section-container {
   display: flex;
-  height: 97vh;
+  height: 96vh;
   align-items: center;
 }
 
@@ -53,7 +53,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   font-weight: 700;
-  margin-bottom: 100px;
+  margin-bottom: 112px;
   border-radius: 3px;
 }
 
