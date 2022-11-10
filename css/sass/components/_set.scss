@@ -79,6 +79,12 @@ body {
 .roll {
   color: $color-white;
   font-size: $font-size-medium;
+  transition: $transition;
+  cursor: pointer;
+}
+
+.roll:hover {
+  font-size: 23px;
 }
 
 .save-score {
@@ -86,6 +92,12 @@ body {
   bottom: 15%;
   color: $color-white;
   font-size: $font-size-medium;
+  transition: $transition;
+  cursor: pointer;
+}
+
+.save-score:hover {
+  font-size: 23px;
 }
 
 .new-game {
@@ -93,6 +105,12 @@ body {
   bottom: 4%;
   color: $color-white;
   font-size: $font-size-small;
+  transition: $transition;
+  cursor: pointer;
+}
+
+.new-game:hover {
+  font-size: 16px;
 }
 
 .rules-game-container {
@@ -112,6 +130,12 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 95px;
+  transition: $transition;
+  cursor: pointer;
+}
+
+.button-go-to-play:hover {
+  font-size: 23px;
 }
 
 @media (min-width: 800px) {
