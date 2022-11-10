@@ -63,15 +63,20 @@ body {
   font-size: $font-size-small;
 }
 
-.dice {
+.dice-container {
   position: absolute;
   top: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dice {
   width: 145px;
+  margin-bottom: 20px;
 }
 
 .roll {
-  position: absolute;
-  bottom: 46%;
   color: $color-white;
   font-size: $font-size-medium;
 }
@@ -158,5 +163,9 @@ body {
 
   .player-two {
     font-size: $font-size-medium;
+  }
+
+  .rules-game-container {
+    font-size: $font-size-large;
   }
 }
