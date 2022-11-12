@@ -172,6 +172,9 @@ body {
   .save-score {
     font-size: 30px;
   }
+  .save-score:hover {
+    font-size: 31px;
+  }
   .player-one {
     font-size: 22px;
   }
