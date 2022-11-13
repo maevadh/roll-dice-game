@@ -81,10 +81,17 @@ body {
   font-size: $font-size-medium;
   transition: $transition;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .roll:hover {
   font-size: 23px;
+}
+
+.text-roll {
+  margin-left: 7px;
+  user-select: none;
 }
 
 .save-score {
@@ -94,6 +101,7 @@ body {
   font-size: $font-size-medium;
   transition: $transition;
   cursor: pointer;
+  user-select: none;
 }
 
 .save-score:hover {
@@ -107,6 +115,7 @@ body {
   font-size: $font-size-small;
   transition: $transition;
   cursor: pointer;
+  user-select: none;
 }
 
 .new-game:hover {
@@ -132,6 +141,7 @@ body {
   margin-top: 95px;
   transition: $transition;
   cursor: pointer;
+  user-select: none;
 }
 
 .button-go-to-play:hover {
@@ -179,9 +189,9 @@ body {
 
   .save-score {
     font-size: $font-size-large;
-      &:hover {
-        font-size: 31px;
-      }
+    &:hover {
+      font-size: 31px;
+    }
   }
 
   .player-one {
@@ -194,5 +204,9 @@ body {
 
   .rules-game-container {
     font-size: $font-size-large;
+  }
+
+  .button-go-to-play:hover {
+    font-size: 31px;
   }
 }

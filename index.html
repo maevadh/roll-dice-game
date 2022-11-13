@@ -19,39 +19,54 @@
     <div class="set-container">
       <div class="players-container player-one-container">
         <div>
-          <span class="player-one">Joueur 1</span>
+          <span class="player-one">PLAYER 1</span>
           <span id="player-one-global-score" class="player-global-score">0</span>
         </div>
         <div class="score-container">
-          <span>Score</span>
+          <span>CURRENT</span>
           <span id="round-player-one">0</span>
         </div>
       </div>
 
       <div class="dice-container">
         <img id="dice" class="dice" src="img/dice-1.png" alt="dice">
-        <span id="roll" class="roll">
-          Lancer le dé
-        </span>
+        <div id="roll" class="roll">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd"
+              d="M12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+              fill="currentColor" />
+            <path d="M12 22C17.5228 22 22 17.5228 22 12H19C19 15.866 15.866 19 12 19V22Z" fill="currentColor" />
+            <path d="M2 12C2 6.47715 6.47715 2 12 2V5C8.13401 5 5 8.13401 5 12H2Z" fill="currentColor" />
+          </svg>
+          <span class="text-roll">ROLL DICE</span>
+        </div>
       </div>
 
       <div class="players-container player-two-container">
         <div>
-          <span class="player-two">Joueur 2</span>
+          <span class="player-two">PLAYER 2</span>
           <span id="player-two-global-score" class="player-global-score">0</span>
         </div>
         <div class="score-container">
-          <span>Score</span>
+          <span>CURRENT</span>
           <span id="round-player-two">0</span>
         </div>
       </div>
 
       <span id="save-score" class="save-score">
-        Enregistrer le score
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11 5C11 4.44772 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V12.1578L16.2428 8.91501L17.657 10.3292L12.0001 15.9861L6.34326 10.3292L7.75748 8.91501L11 12.1575V5Z"
+            fill="currentColor" />
+          <path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z"
+            fill="currentColor" />
+        </svg>
+        HOLD
       </span>
 
       <span id="new-game" class="new-game">
-        Nouvelle partie
+        <svg width="20" height="20" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4C11.4477 4 11 4.44772 11 5V11H5C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13H11V19C11 19.5523 11.4477 20 12 20C12.5523 20 13 19.5523 13 19V13H19C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11H13V5C13 4.44772 12.5523 4 12 4Z" fill="currentColor" /></svg>
+        NEW GAME
       </span>
 
     </div>
