@@ -66,6 +66,13 @@ const hold = () => {
     // switch player
     player = 1;
   }
+
+  if (Number(playerOneGlobalScore.innerText) >= 100) {
+    playerOneGlobalScore.textContent = "Winner";
+  } else if (Number(playerTwoGlobalScore.innerText) >= 100) {
+    playerTwoGlobalScore.textContent = "Winner";
+  }
+
 }
 
 
