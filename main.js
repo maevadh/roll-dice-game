@@ -72,7 +72,9 @@ const hold = () => {
 // 6. Nouvelle partie 
 const resetGame = () => {
   playerOneGlobalScore.textContent = 0;
+  playerTwoGlobalScore.textContent = 0;
   playerOneRound.textContent = 0;
+  playerTwoRound.textContent = 0;
 }
 
 
