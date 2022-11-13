@@ -1,13 +1,13 @@
 // 1. Roll dice
-
 const roll = document.getElementById("roll");
 const imgDice = document.getElementById("dice");
 const roundPlayer1 = document.getElementById("round-player-one");
 const saveScore = document.getElementById("save-score");
 const playerOneGlobalScore = document.getElementById("player-one-global-score");
+const newGame = document.getElementById("new-game");
 
 const clickRoll = () => {
-  const num = Math.floor(Math.random() * 6) + 1; // 1 al 6
+  const num = Math.floor(Math.random() * 6) + 1;
   imgDice.setAttribute("src", `img/dice-${num}.png`);
   const value = roundPlayer1.innerText;
   const newValue = Number(value) + num;
@@ -30,11 +30,18 @@ const hold = () => {
   // 5. change textContent of global score
   playerOneGlobalScore.textContent = sum;
   roundPlayer1.textContent = 0;
-
-
-  console.log(roundPlayer1);
 }
+
+
+// 6. Nouvelle partie 
+const resetGame = () => {
+  playerOneGlobalScore.textContent = 0;
+  roundPlayer1.textContent = 0;
+}
+
+
 
 roll.addEventListener("click", clickRoll);
 saveScore.addEventListener("click", hold);
+newGame.addEventListener("click", resetGame);
 
