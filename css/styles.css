@@ -38,9 +38,18 @@ body {
 }
 
 .player-one {
-  display: block;
+  align-items: center;
+  display: flex;
   font-size: 15px;
   margin: 30px 0 20px 0;
+}
+
+.dot {
+  background-color: red;
+  border-radius: 10px;
+  height: 10px;
+  margin: 7px;
+  width: 10px;
 }
 
 .player-global-score {
@@ -63,9 +72,10 @@ body {
 }
 
 .player-two {
-  display: block;
-  margin: 30px 0 20px 0;
+  align-items: center;
+  display: flex;
   font-size: 15px;
+  margin: 30px 0 20px 0;
 }
 
 .dice-container {

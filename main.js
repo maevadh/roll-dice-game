@@ -3,6 +3,9 @@ const roll = document.getElementById("roll");
 const imgDice = document.getElementById("dice");
 const playersSaveScore = document.getElementById("save-score");
 const newGame = document.getElementById("new-game");
+const dotPlayerOne = document.getElementById("dot-1");
+const dotPlayerTwo = document.getElementById("dot-2");
+
 let player = 1;
 
 const playerOneRound = document.getElementById("round-player-one");
@@ -12,6 +15,9 @@ const playerTwoRound = document.getElementById("round-player-two");
 const playerTwoGlobalScore = document.getElementById("player-two-global-score");
 
 
+//INIT
+dotPlayerTwo.style.display = "none";
+
 const clickRoll = () => {
   const num = Math.floor(Math.random() * 6) + 1;
   imgDice.setAttribute("src", `img/dice-${num}.png`);
@@ -19,8 +25,12 @@ const clickRoll = () => {
   if (num === 1) {
     if (player === 1) {
       playerOneRound.textContent = 0;
+      dotPlayerTwo.style.display = "block";
+      dotPlayerOne.style.display = "none";
     } else {
       playerTwoRound.textContent = 0;
+      dotPlayerOne.style.display = "block";
+      dotPlayerTwo.style.display = "none";
     }
     player = (player === 1 ? 2 : 1);
   } else {
@@ -51,6 +61,8 @@ const hold = () => {
     playerOneRound.textContent = 0;
     // switch player
     player = 2;
+    dotPlayerOne.style.display = "none";
+    dotPlayerTwo.style.display = "block";
   } else {
     // 2. save round value
     const roundPlayerValue = playerTwoRound.innerText;
@@ -65,6 +77,8 @@ const hold = () => {
     playerTwoRound.textContent = 0;
     // switch player
     player = 1;
+    dotPlayerOne.style.display = "block";
+    dotPlayerTwo.style.display = "none";
   }
 
   if (Number(playerOneGlobalScore.innerText) >= 100) {
@@ -78,6 +92,9 @@ const hold = () => {
 
 // 6. Nouvelle partie 
 const resetGame = () => {
+  dotPlayerOne.style.display = "block";
+  dotPlayerTwo.style.display = "none";
+
   playerOneGlobalScore.textContent = 0;
   playerTwoGlobalScore.textContent = 0;
   playerOneRound.textContent = 0;
