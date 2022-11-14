@@ -71,10 +71,10 @@ const hold = () => {
     playerOneGlobalScore.textContent = "Winner";
   } else if (Number(playerTwoGlobalScore.innerText) >= 100) {
     playerTwoGlobalScore.textContent = "Winner";
+    playerTwoGlobalScore.style.fontSize = '13px'
   }
 
 }
-
 
 // 6. Nouvelle partie 
 const resetGame = () => {
@@ -83,7 +83,6 @@ const resetGame = () => {
   playerOneRound.textContent = 0;
   playerTwoRound.textContent = 0;
 }
-
 
 roll.addEventListener("click", clickRoll);
 playersSaveScore.addEventListener("click", hold);

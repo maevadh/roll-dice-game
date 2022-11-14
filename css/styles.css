@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Lato", sans-serif;
   margin: 0;
@@ -6,26 +10,27 @@ body {
 .section-container {
   height: 98vh;
   margin: 10px;
+  position: relative;
 }
 
 .set-container {
+  border-radius: 7px;
   display: flex;
+  height: 100%;
   justify-content: center;
   position: relative;
-  border-radius: 7px;
-  height: 100%;
 }
 
 .players-container {
-  color: #FFF;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 35px;
-  padding-bottom: 180px;
+  color: #FFF;
+  display: flex;
   flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 180px;
+  padding-top: 35px;
+  text-align: center;
 }
 
 .player-one-container {
@@ -34,23 +39,23 @@ body {
 
 .player-one {
   display: block;
-  margin: 30px 0 20px 0;
   font-size: 15px;
+  margin: 30px 0 20px 0;
 }
 
 .player-global-score {
-  font-size: 60px;
+  font-size: 47px;
 }
 
 .score-container {
   background-color: #FFF;
+  border-radius: 3px;
   color: #000;
-  width: 100px;
-  height: 70px;
   display: flex;
   flex-direction: column;
+  height: 70px;
   justify-content: space-around;
-  border-radius: 3px;
+  width: 100px;
 }
 
 .player-two-container {
@@ -64,25 +69,25 @@ body {
 }
 
 .dice-container {
-  position: absolute;
-  top: 33%;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  position: absolute;
+  top: 33%;
 }
 
 .dice {
-  width: 145px;
   margin-bottom: 20px;
+  width: 145px;
 }
 
 .roll {
+  align-items: center;
   color: #FFF;
-  font-size: 22px;
-  transition: 0.2s;
   cursor: pointer;
   display: flex;
-  align-items: center;
+  font-size: 22px;
+  transition: 0.2s;
 }
 
 .roll:hover {
@@ -98,12 +103,12 @@ body {
 }
 
 .save-score {
-  position: absolute;
   bottom: 15%;
   color: #FFF;
-  font-size: 22px;
-  transition: 0.2s;
   cursor: pointer;
+  font-size: 22px;
+  position: absolute;
+  transition: 0.2s;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -115,12 +120,12 @@ body {
 }
 
 .new-game {
-  position: absolute;
+  cursor: pointer;
   bottom: 4%;
   color: #FFF;
   font-size: 15px;
+  position: absolute;
   transition: 0.2s;
-  cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -131,25 +136,35 @@ body {
   font-size: 16px;
 }
 
+.question-mark {
+  bottom: 30px;
+  height: 15px;
+  position: absolute;
+  right: 30px;
+  width: 15px;
+}
+
 .rules-game-container {
-  background-color: #150578;
-  color: #FFF;
-  font-size: 20px;
-  text-align: justify;
-  padding: 40px 40px 17px 40px;
-  height: 94vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
+  background-color: #150578;
+  display: flex;
+  color: #FFF;
+  flex-direction: column;
+  font-size: 20px;
+  height: 94vh;
+  justify-content: center;
+  padding: 40px 40px 17px 40px;
+  text-align: justify;
 }
 
 .button-go-to-play {
+  color: #FFF;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   margin-top: 95px;
+  text-decoration: none;
   transition: 0.2s;
-  cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -165,16 +180,16 @@ body {
     bottom: 170px;
   }
   .score-container {
+    font-weight: 700;
     height: 90px;
     width: 110px;
-    font-weight: 700;
   }
   .new-game {
     bottom: 7%;
   }
   .dice {
-    width: 170px;
     top: 27%;
+    width: 170px;
   }
   .player-global-score {
     font-size: 75px;
