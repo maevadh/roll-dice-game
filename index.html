@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--Link css-->
-  <link rel="stylesheet" href="./css/styles.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="roll dice game">
+  <meta name="description" content="Enjoy with your friends playing roll dice game! So, who will be the winner?">
   <!--Font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <title>Roll dice</title>
+  <!--Favicon-->
+  <link rel="icon" href="img/favicon-dice.png">
+  <!--CSS link-->
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Roll dice game</title>
 </head>
 
 <body>
@@ -52,7 +56,7 @@
             <span id="dot-2" class="dot"></span>
           </div>
 
-        <span id="player-two-global-score" class="player-global-score">0</span>
+          <span id="player-two-global-score" class="player-global-score">0</span>
         </div>
         <div class="score-container">
           <span>CURRENT</span>
@@ -91,19 +95,20 @@
 
   <section id="section-rules" class="rules-game-container">
     <span>
-      Chaque joueur possède un score temporaire (ROUND) et un score global (GLOBAL). <br> <br>
-      À chaque tour, le joueur a son ROUND initialisé à 0 et peut lancer un dé autant de fois qu'il le souhaite. <br>
-      Le résultat d’un lancer est ajouté au ROUND. <br> <br>
+      Each player has a temporary score (ROUND) and an overall score (GLOBAL). <br>
+      At each turn, the player has his ROUND initialized to 0 and can roll a die as many times as he wishes. <br>
+      The result of a throw is added to the ROUND. <br><br>
 
-      Lors de son tour, le joueur peut décider à tout moment de: <br>
-      - Cliquer sur l’option “Hold” pour conserver le score. Ce sera alors le tour de l’autre joueur. <br>
-      - Lancer le dé. S’il obtient un 1, son score ROUND est perdu et c’est la fin de son tour. <br> <br>
-      Le premier joueur qui atteint les 100 points sur global gagne le jeu.
+      During his turn, the player can decide at any time to: <br>
+      - Click on the “Hold” option to keep the score. It will then be the other player's turn. <br>
+      - Roll the dice. If he rolls a 1, his ROUND score is lost and his turn ends. <br><br>
+      The first player to reach 100 points on global wins the game.
     </span>
     <a href="#section-container" class="button-go-to-play">Go to play</a>
 
   </section>
 
+  <!--JavaScript link-->
   <script src="./main.js"></script>
 </body>
 
