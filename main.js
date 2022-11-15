@@ -90,7 +90,7 @@ const hold = () => {
 
 }
 
-// 6. Nouvelle partie 
+// 6. New game
 const resetGame = () => {
   dotPlayerOne.style.display = "block";
   dotPlayerTwo.style.display = "none";
