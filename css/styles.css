@@ -23,7 +23,7 @@ body {
 
 .players-container {
   align-items: center;
-  color: #fff;
+  color: #FFF;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -44,6 +44,12 @@ body {
   margin: 30px 0 20px 0;
 }
 
+.player-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .dot {
   background-color: red;
   border-radius: 10px;
@@ -57,7 +63,7 @@ body {
 }
 
 .score-container {
-  background-color: #fff;
+  background-color: #FFF;
   border-radius: 3px;
   color: #000;
   display: flex;
@@ -68,7 +74,7 @@ body {
 }
 
 .player-two-container {
-  background-color: #3943b7;
+  background-color: #3943B7;
 }
 
 .player-two {
@@ -93,7 +99,7 @@ body {
 
 .roll {
   align-items: center;
-  color: #fff;
+  color: #FFF;
   cursor: pointer;
   display: flex;
   font-size: 22px;
@@ -107,22 +113,22 @@ body {
 .text-roll {
   margin-left: 7px;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .save-score {
   bottom: 15%;
-  color: #fff;
+  color: #FFF;
   cursor: pointer;
   font-size: 22px;
   position: absolute;
   transition: 0.2s;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .save-score:hover {
@@ -132,14 +138,14 @@ body {
 .new-game {
   cursor: pointer;
   bottom: 4%;
-  color: #fff;
+  color: #FFF;
   font-size: 15px;
   position: absolute;
   transition: 0.2s;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .new-game:hover {
@@ -158,7 +164,7 @@ body {
   align-items: center;
   background-color: #150578;
   display: flex;
-  color: #fff;
+  color: #FFF;
   flex-direction: column;
   font-size: 20px;
   height: 94vh;
@@ -168,7 +174,7 @@ body {
 }
 
 .button-go-to-play {
-  color: #fff;
+  color: #FFF;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -176,15 +182,20 @@ body {
   text-decoration: none;
   transition: 0.2s;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .button-go-to-play:hover {
   font-size: 23px;
 }
 
+@media (max-width: 380px) {
+  .players-container {
+    padding-bottom: 155px;
+  }
+}
 @media (min-width: 800px) {
   .save-score {
     bottom: 170px;
@@ -234,4 +245,4 @@ body {
   .button-go-to-play:hover {
     font-size: 31px;
   }
-} /*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
