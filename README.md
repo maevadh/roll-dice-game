@@ -1,6 +1,6 @@
 # roll-dice-game
 
-Evaluation n2 Front-end - Studi 
+Evaluation n2 Front-end - Studi <br>
 Coder le jeu de dé avec HTML/CSS/SASS/JS
 
 Les règles du jeu :
