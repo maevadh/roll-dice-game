@@ -15,6 +15,17 @@ const playerTwoRound = document.getElementById("round-player-two");
 const playerTwoGlobalScore = document.getElementById("player-two-global-score");
 
 
+// 7. New game
+const resetGame = () => {
+  dotPlayerOne.style.display = "block";
+  dotPlayerTwo.style.display = "none";
+
+  playerOneGlobalScore.textContent = 0;
+  playerTwoGlobalScore.textContent = 0;
+  playerOneRound.textContent = 0;
+  playerTwoRound.textContent = 0;
+}
+
 //INIT
 dotPlayerTwo.style.display = "none";
 
@@ -22,10 +33,6 @@ const clickRoll = () => {
   const num = Math.floor(Math.random() * 6) + 1;
   imgDice.setAttribute("src", `img/dice-${num}.png`);
 
-  if(playerOneGlobalScore.innerText === "Winner" || playerTwoGlobalScore.innerText === "Winner") {
-    resetGame();
-  }
-  
   if (num === 1) {
     if (player === 1) {
       playerOneRound.textContent = 0;
@@ -48,18 +55,11 @@ const clickRoll = () => {
       playerTwoRound.textContent = newValue;
     }
   }
+  if (playerOneGlobalScore.innerText === "Winner" || playerTwoGlobalScore.innerText === "Winner") {
+    resetGame();
+  }
 }
 
-// 7. New game
-const resetGame = () => {
-  dotPlayerOne.style.display = "block";
-  dotPlayerTwo.style.display = "none";
-
-  playerOneGlobalScore.textContent = 0;
-  playerTwoGlobalScore.textContent = 0;
-  playerOneRound.textContent = 0;
-  playerTwoRound.textContent = 0;
-}
 
 const hold = () => {
   if (player === 1) {
@@ -96,7 +96,7 @@ const hold = () => {
     dotPlayerTwo.style.display = "none";
   }
 
-  if(playerOneGlobalScore.innerText === "Winner" || playerTwoGlobalScore.innerText === "Winner") {
+  if (playerOneGlobalScore.innerText === "Winner" || playerTwoGlobalScore.innerText === "Winner") {
     resetGame();
   }
 
